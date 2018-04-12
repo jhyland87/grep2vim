@@ -49,7 +49,7 @@ function _err ( msg, ret ){
 }
 
 function _debug ( msg ){
-  #if ( msg && cfg["debug"] == 1 )
+  if ( msg && cfg["debug"] == 1 )
     printf( "[DEBUG]: %s\n", msg ) > "/dev/stderr"
 }
 
